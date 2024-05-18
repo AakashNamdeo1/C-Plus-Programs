@@ -23,6 +23,15 @@ int main() {
     // Creating an object of BankAccount with initial values
     BankAccount myAccount("Veer Savarkar ", 123456789, 100000.00);
 
-    // Rest of the code
+    // Testing the deposit function
+    account.deposit(10000.0);
+    account.display();
+
+    // Testing the withdraw function
+    if (account.withdraw(22000.0)) {
+        cout << "Withdrawal successful." << endl;
+    }
+    account.display();
+
     return 0;
 }
