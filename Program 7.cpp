@@ -16,7 +16,26 @@ public:
                   << balance << std::endl;
     }
 
-    // Additional methods can be added here
+        void deposit(double amount) {
+        balance += amount;
+    }
+
+    // Function to withdraw an amount after checking the balance
+    bool withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            return true;
+        } else {
+            cout << "Insufficient balance to withdraw the amount." << endl;
+            return false;
+        }
+    }
+
+    // Function to display name and balance
+    void display() const {
+        cout << "Depositor Name: " << depositorName << endl;
+        cout << "Balance: " << balance << endl;
+    }
 };
 
 int main() {
