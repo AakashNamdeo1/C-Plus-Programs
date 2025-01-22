@@ -1,3 +1,7 @@
+/* Write a macro that obtains the largest of 3 numbers.*/
+
+
+
 #include <iostream>
 #define LARGEST_OF_THREE(x, y, z) ((x) > (y) ? ((x) > (z) ? (x) : (z)) : ((y) > (z) ? (y) : (z)))
 using namespace std;
