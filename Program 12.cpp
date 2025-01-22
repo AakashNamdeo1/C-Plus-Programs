@@ -1,3 +1,12 @@
+/*Create a base class shape. Use this class to store two double type values that could be used to compute 
+area of figures. Derive two specific classes called triangle and rectangle from the base shape. Add to the base a 
+member function getdata() to initialize base class data member and another member function display_area() to 
+compute and display the area of figures. Make display_area() as a virtual function and redefine it the derived 
+class.*/
+
+
+
+
 #include <iostream>
 
 // Base class
